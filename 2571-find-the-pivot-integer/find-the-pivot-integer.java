@@ -3,6 +3,8 @@ class Solution {
 
         // formula method
         int sum=n*(n+1)/2;
+        int x=(int)Math.sqrt(sum);
+        if(x*x==sum)return x;
 
         // normal method
         // int sum=0
@@ -10,14 +12,15 @@ class Solution {
         //     sum+=i;
         // }
 
-        int prefix=0;
-        int i=1;
-        while(i<=n){
-            sum-=i;
-            if(sum==prefix)return i;
-            prefix+=i;
-            i++;
-        }
+        // int prefix=0;
+        // int i=1;
+        // while(i<=n){
+        //     sum-=i;
+        //     if(sum==prefix)return i;
+        //     prefix+=i;
+        //     i++;
+        // }
+
         return -1;
     }
 }
