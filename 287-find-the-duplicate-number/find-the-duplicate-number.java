@@ -3,26 +3,13 @@ class Solution {
 
         Arrays.sort(nums);
 
-        int i=0;
-        
-        while(i<nums.length-1){
-            int j=i+1;
-            if(nums[j]==nums[i]){
-                while(j<nums.length && nums[j]==nums[i]){
-                    j++;
-                }
-                return(nums[i]);
-                
-                
-            }
-            else{
-                i++;
+        for(int i=1;i<nums.length;i++){
+
+            if(nums[i]==nums[i-1]){
+                return nums[i];
             }
         }
 
         return -1;
-
-
-        
     }
 }
