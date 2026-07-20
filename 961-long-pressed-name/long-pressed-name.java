@@ -1,7 +1,7 @@
 class Solution {
     public boolean isLongPressedName(String name, String typed) {
 
-        // if(typed.length()<name.length())return false;
+        if(typed.length()<name.length())return false;
 
         int i=0;
         int j=0;
