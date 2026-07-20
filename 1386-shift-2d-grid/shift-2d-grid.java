@@ -14,7 +14,7 @@ class Solution {
 
         }
         int r = arr.length;
-        k = k % r;
+        k = k % r; 
 //using logic of que 189 which is rotate arr to rotate k elements of arr
         reverse(arr, 0, r - 1); 
         reverse(arr, 0, k - 1);
