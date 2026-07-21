@@ -13,12 +13,12 @@ class Solution {
         int max=count;
         
 
-        for(int i=0,j=k;j<s.length();i++,j++){
+        for(int i=k;i<s.length();i++){
             if(isVowel(s.charAt(i))){
-                count--;
-            }
-            if(isVowel(s.charAt(j))){
                 count++;
+            }
+            if(isVowel(s.charAt(i-k))){
+                count--;
             }
 
             if(count>max)max=count;
