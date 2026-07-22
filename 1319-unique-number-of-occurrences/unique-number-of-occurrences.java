@@ -2,7 +2,7 @@ class Solution {
     public boolean uniqueOccurrences(int[] arr) {
 
         Map<Integer,Integer> map=new HashMap<>();
-        List<Integer> a=new ArrayList<>();
+        Set<Integer> a=new HashSet<>();
 
         for(int n:arr){
             map.put(n, map.getOrDefault(n, 0)+1);
